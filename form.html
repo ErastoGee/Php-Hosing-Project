@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>validate | form</title>
+    <style>
+        .validate {
+        margin: auto;
+        padding: 10px;
+        width: 400px;
+        background : #D8F1F8;
+        border: 1px soild silver;
+        }
+        .validate h2 {
+        margin-left: 38px;
+        }
+        input {
+        font-size: 14pt;
+        }
+        input:focus, textarea:focus{
+        background-color: lightyellow;
+        }
+        input submit {
+        font-size: 11pt;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="validate">
+        <h2>Personal Information</h2>
+        <form onsubmit="return required()">
+            Telephone Number*:<br>
+            <input type="text" id="mobile" value="">
+            <span id="message" style="color: red;"></span><br><br>
+            FirstName*:<br>
+            <input type="text" id="firstname" value="">
+            <span id="messages" style="color: red;"></span><br><br>
+            LastName*:<br>
+            <input type="text" id="lastname" value="">
+            <span id="messagess" style="color: red;"></span><br><br>
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+<script>
+    function required(){
+        var a = document.getElementById("mobile").value;
+        var b = document.getElementById("firstname").value;
+        var c = document.getElementById("lastname").value;
+        if(a==""){
+            document.getElementById ("message").innerHTML="** please fill mobile number"
+            return false;
+        }
+        if(b==""){
+            document.getElementById ("messages").innerHTML="** required"
+            return false;
+        }
+        if(c==""){
+            document.getElementById ("messagess").innerHTML="** required"
+            return false;
+        }
+        if(isNaN(a)){
+            document.getElementById ("message").innerHTML="** please enter correct mobile number"
+            return false;
+        }
+        if(a.length<10){
+            document.getElementById ("message").innerHTML="** please enter 10 digits"
+            return false;
+        }
+        if(a.length>10){
+            document.getElementById ("message").innerHTML="** please enter 10 digits"
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

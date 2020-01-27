@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Control page</title>
+	<style type="text/css">
+
+		body{
+	
+			padding: 0;
+			margin: 0;
+
+
+		}
+
+		.menu ul{
+
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			height: 100px;
+			/*background: #ccc;*/
+
+		}
+
+		.menu ul li { 
+			padding: 15px;
+			position: relative;
+			width: 150px;
+			vertical-align: middle;
+			background: linear-gradient(rgba(3,39,80,.4), rgba(3,39,80,.9));
+			cursor: pointer;
+			border-top: 1px solid #BDC3C7;
+			-webkit-transition: all .3s;
+			-o-transition: all .3s;
+			transition: all .3s;
+
+
+		}
+
+		.menu ul li:hover {
+			background-color: #2ECC71;
+
+		}
+
+		.menu > ul > li{
+			/*border-right: 5px solid #F1C40F;*/
+
+
+		}
+
+		.menu ul ul {
+			transition: all .3s;
+			opacity: 0;
+			position: absolute;
+			border-left: 5px solid #F1C40F;
+			visibility: hidden;
+			left: 99%;
+			top: -2%;
+
+
+		}
+
+		.menu ul li:hover > ul{
+
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.menu ul li a{
+			color: #fff;
+			text-decoration: none;
+		}
+
+		span{
+			margin-right: 15px;
+		}
+
+		.menu > ul > li:nth-of-type(2)::after{
+
+			content: "+";
+			position: absolute;
+			margin-left: 20%;
+			color: #fff;
+			font-size: 20px;
+		}
+
+			.menu > ul > li:nth-of-type(3)::after{
+
+			content: "+";
+			position: absolute;
+			margin-left: 35%;
+			color: #fff;
+			font-size: 20px;
+		}
+			
+				
+				.menu > ul > li:nth-of-type(6)::after{
+
+			content: "+";
+			position: absolute;
+			margin-left: 20%;
+			color: #fff;
+			font-size: 20px;
+		}
+
+		.menu > ul > li:nth-of-type(7)::after{
+
+			content: "+";
+			position: absolute;
+			margin-left: 20%;
+			color: #fff;
+			font-size: 20px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="menu">
+		<ul>
+			<li><a href="tenantc.php"><span class="fa fa-home"></span>HOME</a></li>
+			<li><a href=""><span class="fa fa-home"></span>REGISTER</a>
+				<ul>
+					<li><a href="registert.php"><span class="fa fa-home"></span>TENANTS</a></li>
+					<li><a href="regvisit.php"><span class="fa fa-home"></span>VISITORS</a></li>
+					<li><a href="regsol.php"><span class="fa fa-home"></span>SOLDIER</a></li>
+				</ul>
+				</li>
+
+				<li><a href="">TENANT</a>
+
+					<ul>
+					<li><a href="registert.php"><span class="fa fa-home"></span>REGISTER</a></li>
+					<li><a href="tenantc.php"><span class="fa fa-home"></span>VIEW</a></li>
+				</ul>
+
+
+				</li>
+				<li><a href="VACANT.php">VACANTS</a></li>
+				<li><a href="delete.php">EVACUATE</a></li>
+				<li><a href="">SOLDIERS</a>
+
+					<ul>
+					<li><a href="regsol.php"><span class="fa fa-home"></span>RECORD</a></li>
+					<li><a href="soldiers.php"><span class="fa fa-home"></span>VIEW</a></li>
+					<li><a href="deletes.php"><span class="fa fa-home"></span>DELETE</a></li>
+				</ul>
+
+
+				</li>
+
+				<li><a href="">VISITORS</a>
+
+					<ul>
+					<li><a href="regvisit.php"><span class="fa fa-home"></span>RECORD</a></li>
+					<li><a href="visitors.php"><span class="fa fa-home"></span>VIEW</a></li>
+					<li><a href="clearvisit.php"><span class="fa fa-home"></span>DELETE</a></li>
+				</ul>
+
+
+				</li>
+
+				<li><a href="tenantc.php">TENANTS</a></li>
+				
+
+
+
+
+			</ul>
+
+	</div>
+</body>
+</html>

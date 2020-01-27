@@ -1,0 +1,70 @@
+body{ 
+	/*background:url('../pix/5.jpg');*/
+	/*background-color: #eee;*/
+	background-color: #333;
+	/*background-color: #444;*/
+	/*background-color: gradient();*/
+	/*background-color: #0f0;*/
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+}
+td{
+
+	color: #fff;
+	font-family: monospace;
+	font-size: 40px;
+
+}
+form{
+
+	margin-top: 15%;
+	margin-left: 10%;
+
+}
+input[type= 'text'], input[type= 'password']{
+	width: 300px;
+	height: 25px;
+	border-radius: 15px;
+}
+button{
+	width: 100px;
+	border: 1px solid red;
+	background: green;
+	/*height: 30px;*/
+	padding: 5px;
+	margin-top: 15%;
+}
+h1{
+
+	color: #ccc;
+}
+#www{
+
+	/*margin: 50%;*/
+	margin: 43%;
+	justify-content: center;
+
+	color: brown;
+	text-align: center;
+	font-size: 20px;
+
+}
+#rel{
+
+	font-size: 40px;
+	color: #ccc;
+	margin-top: 30%;
+	text-align-last; 
+}
+
+#ter{
+
+	color: #ccc;
+}
+#rem{
+
+	width: 30px;
+	height: 20px;
+}
